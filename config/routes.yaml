@@ -1,0 +1,17 @@
+utilisateur_list:
+  path: /listeUtilisateur
+  controller: App\Controller\UtilisateurController::listeU
+
+newUtilisateur:
+ path: /utilisateur/inscription
+ controller: App\Controller\UtilisateurController::ajouterU
+
+
+projet_list:
+  path: /listeProjet
+  controller: App\Controller\UtilisateurController::listeP
+  
+newProject:
+ path: /projet/add
+ controller: App\Controller\UtilisateurController::ajouterP
+

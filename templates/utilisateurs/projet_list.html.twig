@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block title%} Liste des utilisateurs{% endblock %}
+
+{% block body %}
+ {% if projets %}
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nom</th> <th>Description</th> 
+        </tr>
+      </thead>
+      <tbody>
+        {% for projet in projets %}
+        <tr> 
+          <td>{{ projet.nom }}</td> <td>{{ projet.description }}</td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>Aucun projet</p>
+  {% endif %} 
+{% endblock %}
